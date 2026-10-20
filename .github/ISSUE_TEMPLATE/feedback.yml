@@ -1,0 +1,26 @@
+name: Feedback
+description: An idea, a request, or a general impression of the tool as it stands.
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Feedback is filed as a public issue, so its outcome is visible too. All of it is read.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - Idea
+        - Feature request
+        - General impression
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: The feedback
+      description: What you would change, add, or keep — and the work it comes from, if that matters.
+    validations:
+      required: true
