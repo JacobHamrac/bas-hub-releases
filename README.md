@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/JacobHamrac/bas-hub-releases/releases/tag/v0.9.4"><img src="https://img.shields.io/badge/current_release-0.9.4-FF7A29?style=flat-square" alt="Current release: 0.9.4"></a>
+  <a href="https://github.com/JacobHamrac/bas-hub-releases/releases/tag/v0.9.5"><img src="https://img.shields.io/badge/current_release-0.9.5-FF7A29?style=flat-square" alt="Current release: 0.9.5"></a>
   <img src="https://img.shields.io/badge/platform-Windows_x64-2E2F34?style=flat-square" alt="Platform: Windows x64">
   <img src="https://img.shields.io/badge/modules-4-2EC5B6?style=flat-square" alt="Four modules: Programmer+, Network+, Reports+, BAS Copilot">
   <img src="https://img.shields.io/badge/telemetry-none-2EC5B6?style=flat-square" alt="No telemetry">
@@ -24,7 +24,7 @@ Screenshots, the demo, module tours, install reference, FAQ, and every release's
   <a href="https://bas-hub-app.github.io/"><strong>→ bas-hub-app.github.io</strong></a>
 </p>
 
-This repository is the download shelf: it carries the release downloads (the current release is 0.9.4) and this gateway page. It contains no source code, and it never will: BAS Hub is proprietary software.
+This repository is the download shelf: it carries the release downloads (the current release is 0.9.5) and this gateway page. It contains no source code, and it never will: BAS Hub is proprietary software.
 
 ---
 
@@ -52,7 +52,7 @@ This repository is the download shelf: it carries the release downloads (the cur
     <td width="20%" align="center">
       <span style="font-size:26px;font-weight:700;">R+</span><br>
       <strong>Reports+</strong><br>
-      <sub>The reporting studio: 59 report subjects, fed by vendor files and by live subjects handed over from Network+ and Programmer+; built, previewed, edited, and exported in one place. PDF, XLSX, CSV, TXT out.</sub>
+      <sub>The reporting studio: 60 report subjects, fed by vendor files and by live subjects handed over from Network+ and Programmer+; built, previewed, edited, and exported in one place. PDF, XLSX, CSV, TXT out.</sub>
     </td>
     <td width="20%" align="center">
       <img src="assets/icon-copilot.png" alt="BAS Copilot icon" width="72"><br>
@@ -62,21 +62,21 @@ This repository is the download shelf: it carries the release downloads (the cur
   </tr>
 </table>
 
-## Current release: 0.9.4
+## Current release: 0.9.5
 
-> **BAS Hub 0.9.4 is the current release, published as stable.** It is the first BAS Hub release published as a stable (non-beta) release: 1.0.0 remains reserved for the first release proven end-to-end in the field. Separate per-OS packages: download the installer for your OS from the [**0.9.4 release**](https://github.com/JacobHamrac/bas-hub-releases/releases/tag/v0.9.4). Tested on Linux; the Windows package's payload is verified, and its Windows install proof is the owner pass. A Windows ARM64 package rides in the same release as a candidate build; it has not been verified on ARM64 hardware. The in-app update check reads the latest stable release, so an installed 0.9.3 or 0.9.2 is offered 0.9.4 by the app itself. One defect, found on release day: the in-app download step in 0.9.3 and 0.9.4 crashes as the download begins, so for this hop install from the standalone Setup below; the crash changes nothing on the computer it runs on. Full notes for every build are on the [website's versions page](https://bas-hub-app.github.io/releases.html).
+> **BAS Hub 0.9.5 is the current release, published as stable.** Separate per-OS packages: download the installer for your OS from the [**0.9.5 release**](https://github.com/JacobHamrac/bas-hub-releases/releases/tag/v0.9.5). Tested on Linux; the Windows package's payload is verified, and its Windows install proof is the owner pass. A Windows ARM64 package rides in the same release as a candidate build; it has not been verified on ARM64 hardware. The in-app update check reads the latest stable release, so an installed 0.9.4, 0.9.3 or 0.9.2 is offered 0.9.5 by the app itself. The update-download crash found in 0.9.3 and 0.9.4 on 2026-10-24 is fixed in 0.9.5: the hop from an installed 0.9.3 or 0.9.4 still goes through the standalone Setup below (the crashing code is in the old app), and from 0.9.5 onward the in-app download carries the fix. Full notes for every build are on the [website's versions page](https://bas-hub-app.github.io/releases.html).
 
 | File | Size (bytes) | SHA-256 |
 | --- | ---: | --- |
-| BAS-Hub-Setup-Windows-x64.exe | 185,844,105 | `29d6d5bc86fde9b650e3b74d9289b411b17238e2c93dc85d74e5222ba6f3a280` |
-| BAS-Hub-Setup-Linux-x64 | 186,670,094 | `fb236d26152a8cec4e90734b75e1df98f8a9cb57fd9c306538f2944ad7e112a0` |
-| BAS-Hub-Setup-Windows-ARM64.exe (candidate) | 183,157,147 | `dd96ccb82c534f3174f812414f4e69ee4775d734f920ee94c2dc530719802cc2` |
-| BAS-Hub-User-Guide-0.9.4.pdf | 2,543,178 | `ab0c1673a8452d1d6277b369ce2c8b0aa64440ec2ed9b7726dfa6750b325df8c` |
-| SBOM.json | 13,344 | `cc5774782817489c2022a37663e5b807fd69161b6ac685524fdfe32e0003814b` |
+| BAS-Hub-Setup-Windows-x64.exe | 178,578,313 | `bb57b602e8a756b21521f3207014531a76fcb8bda74cf1cfae770e56519a7d30` |
+| BAS-Hub-Setup-Linux-x64 | 179,402,766 | `008fa5325760628f4ac0820ab2aff8a1ef8383949be4422f73fd5f60204407c5` |
+| BAS-Hub-Setup-Windows-ARM64.exe (candidate) | 175,887,259 | `74a660f8d7edcc1a4387a894f1b6ad2e373afd373987c7728ba10c3565ee1cf3` |
+| BAS-Hub-User-Guide-0.9.5.pdf | 2,508,071 | `576661218732d5f7ac42a881ce1842f5c102001666e6e1778a77827925ff0a27` |
+| SBOM.json | 14,987 | `30668d2d74ffb5c854830869412d968cf0800791be0746a1ebb87dbddc64c06a` |
 
 **Download & install**
 
-1. Open the [**0.9.4 release**](https://github.com/JacobHamrac/bas-hub-releases/releases/tag/v0.9.4) and download the installer for your OS: **`BAS-Hub-Setup-Windows-x64.exe`** (Windows) or **`BAS-Hub-Setup-Linux-x64`** (Linux): each is one self-contained file, with `SBOM.json` and the User Guide (PDF) beside it in the download set.
+1. Open the [**0.9.5 release**](https://github.com/JacobHamrac/bas-hub-releases/releases/tag/v0.9.5) and download the installer for your OS: **`BAS-Hub-Setup-Windows-x64.exe`** (Windows) or **`BAS-Hub-Setup-Linux-x64`** (Linux): each is one self-contained file, with `SBOM.json` and the User Guide (PDF) beside it in the download set.
 2. Run the installer. BAS Hub needs **no administrator rights** and installs for your user account only, in a location you choose.
 3. Pick the **complete package**, or just the modules you want. Optional extras: **BAS Copilot** (Setup offers the model sizes this computer can run well) and **Npcap** (the packet-capture driver for Network+ live capture, its own signed installer, the one step that asks for administrator approval).
 4. Launch **BAS Hub** from the Start menu or your desktop. Your data lives in `%LOCALAPPDATA%\BAS Hub\data` and is never removed by updates or by uninstalling.
