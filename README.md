@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/JacobHamrac/bas-hub-releases/releases/tag/v0.9.9"><img src="https://img.shields.io/badge/current_release-0.9.9-FF7A29?style=flat-square" alt="Current release: 0.9.9"></a>
+  <a href="https://github.com/JacobHamrac/bas-hub-releases/releases/tag/v0.9.9-iter2"><img src="https://img.shields.io/badge/current_release-0.9.9-FF7A29?style=flat-square" alt="Current release: 0.9.9"></a>
   <img src="https://img.shields.io/badge/platform-Windows_x64-2E2F34?style=flat-square" alt="Platform: Windows x64">
   <img src="https://img.shields.io/badge/modules-4-2EC5B6?style=flat-square" alt="Four modules: Programmer+, Network+, Reports+, BAS Copilot">
   <img src="https://img.shields.io/badge/telemetry-none-2EC5B6?style=flat-square" alt="No telemetry">
@@ -24,7 +24,7 @@ Screenshots, the demo, module tours, install reference, FAQ, and every release's
   <a href="https://bas-hub-app.github.io/"><strong>→ bas-hub-app.github.io</strong></a>
 </p>
 
-This repository is the download shelf: it carries the release downloads (the current release is 0.9.9) and this gateway page. It contains no source code, and it never will: BAS Hub is proprietary software.
+This repository is the download shelf: it carries the release downloads (the current release is 0.9.9, iteration 2) and this gateway page. It contains no source code, and it never will: BAS Hub is proprietary software.
 
 ---
 
@@ -62,21 +62,21 @@ This repository is the download shelf: it carries the release downloads (the cur
   </tr>
 </table>
 
-## Current release: 0.9.9
+## Current release: 0.9.9 — iteration 2
 
-> **BAS Hub 0.9.9 is the current release, published as stable.** Separate per-OS packages: download the installer for your OS from the [**0.9.9 release**](https://github.com/JacobHamrac/bas-hub-releases/releases/tag/v0.9.9). 0.9.9 is the fix release for the field session run against 0.9.7 at a live site — nine findings, every one fixed here: a Cancel in the Connect window's Auto-assign flow that did not cancel (it now stops the work, sends nothing further, and closes, in every state); a network picker that was a dead end whenever detection found more than one network (a click now selects, and the selection survives re-renders); a Points tab that sat silent when it could not read (it now states what is missing, makes the attempt where an address exists, and reports the outcome — every attempt logged, every failure filed); device pages rebuilt from running text into a summary band and structured sections; every popup in the suite grabbable and movable, with Escape meaning Cancel in all twenty-two dialogs that gained it; and every internal working reference purged from the shipped text, verified by an exhaustive sweep at zero hits. The Mapper is navigable: double-click a device to open its page, right-click for evidence-gated options. Proven on the shipped build in the test rig (full battery plus the fix-specific gates), and installed and verified on a real Windows machine (269 files, checksum-exact), with the device pages and the points honesty path exercised in the running app; two re-checks on that machine — the Connect window's rebuilt chrome and the Mapper's new interactions — are carried openly in the release notes as still outstanding. Points against real field firmware remains unproven and is named as such. A Windows ARM64 package rides in the same release as a candidate build; it has not been verified on ARM64 hardware. The in-app update check reads the latest stable release, so an installed 0.9.7, 0.9.6, 0.9.5, 0.9.4, 0.9.3 or 0.9.2 is offered 0.9.9 by the app itself; the hop from an installed 0.9.3 or 0.9.4 still goes through the standalone Setup below. Full notes for every build are on the [website's versions page](https://bas-hub-app.github.io/releases.html).
+> **BAS Hub 0.9.9, iteration 2 (build iter2, 2026-11-05), is the current build of the current release.** Separate per-OS packages: download the installer for your OS from the [**0.9.9 iteration 2 release**](https://github.com/JacobHamrac/bas-hub-releases/releases/tag/v0.9.9-iter2). Iteration 2 is the Connection Wizard build: Network+ rolls to 2.5.0 — connecting now starts from a Connect button that opens a wizard, Auto finds the network, Deep is the standing scan depth (every object in every device, read), and the scan tracker shows elapsed time plus an estimated remaining time as ranges. The Connections page is retired into the wizard. 53 of the second inspection round's 60 findings are fixed with receipts, including the D-PL2 write-door defect: the Points write doors open only behind a visible selection and a loaded list. Still open, named in the release notes by ID: INS2-33, INS2-48, INS2-53, DELTA-01…04, DELTA-06, DELTA-07, F-23, one dependency advisory under review (GHSA-xrw6-gwf8-vvr9), and the carried product shortfalls. Proven on the shipped build in the test rig (eleven named verification gates green) and installed and verified on a real Windows machine (271 files; Network+ 2.5.0 live in the running app, no-model choice preserved); two re-checks on that machine — the rebuilt Connect chrome and the Mapper's interactions — are still to be driven there and are carried openly. Points against real field firmware remains unproven. A Windows ARM64 package rides in the same release as a candidate build; it has not been verified on ARM64 hardware. The in-app update check reads the latest stable release, so earlier installed builds are offered this one by the app itself; the hop from an installed 0.9.3 or 0.9.4 still goes through the standalone Setup below. Full notes for every build are on the [website's versions page](https://bas-hub-app.github.io/releases.html).
 
 | File | Size (bytes) | SHA-256 |
 | --- | ---: | --- |
-| BAS-Hub-Setup-Windows-x64.exe | 175,065,993 | `2b5c9c4cc5487f15f743482f84ad32b1aa700e03c28f8e88e41b39ccf0deaba0` |
-| BAS-Hub-Setup-Linux-x64 | 175,893,518 | `ab682759605afe7ee33d0d59db8e7b820ed0cca9f60a26a28f34554545981688` |
-| BAS-Hub-Setup-Windows-ARM64.exe (candidate) | 172,374,939 | `0d148dea5793599ecb9f5ff236ffdeb8e3fef899fbebf06b17eabca245741f94` |
+| BAS-Hub-Setup-Windows-x64.exe | 175,131,529 | `b6ed5de5eb933476785a82ac08673292fd8f52ad41a0db2f2e824ef8c72c7756` |
+| BAS-Hub-Setup-Linux-x64 | 175,958,542 | `dada3e097b5e77e10ef209d18eb445e089cfbd284a2fd0d79fb503f0b2a09e74` |
+| BAS-Hub-Setup-Windows-ARM64.exe (candidate) | 172,440,475 | `93e9f22b62b54a62fe92c26b6c5bc659b6e75165f6ef60b2f7b09878670f09ca` |
 | BAS-Hub-User-Guide-0.9.9.pdf | 2,803,681 | `3bc588b64690051750891ffc6b5d77ab0fd0b1754f0bb2aa5c2bd054045120fd` |
-| SBOM.json | 14,987 | `f1e5f1cc973774cec40f3d23f2802fba1c2c5c3dcfdb8c21935e408708bf62c` |
+| SBOM.json | 17,888 | `af4b7659d65be55edc1a0d41cf82a99d6fee0dfeee9bfbbb25b16` |
 
 **Download & install**
 
-1. Open the [**0.9.9 release**](https://github.com/JacobHamrac/bas-hub-releases/releases/tag/v0.9.9) and download the installer for your OS: **`BAS-Hub-Setup-Windows-x64.exe`** (Windows) or **`BAS-Hub-Setup-Linux-x64`** (Linux): each is one self-contained file, with `SBOM.json` and the User Guide (PDF) beside it in the download set.
+1. Open the [**0.9.9 iteration 2 release**](https://github.com/JacobHamrac/bas-hub-releases/releases/tag/v0.9.9-iter2) and download the installer for your OS: **`BAS-Hub-Setup-Windows-x64.exe`** (Windows) or **`BAS-Hub-Setup-Linux-x64`** (Linux): each is one self-contained file, with `SBOM.json` and the User Guide (PDF) beside it in the download set.
 2. Run the installer. BAS Hub needs **no administrator rights** and installs for your user account only, in a location you choose.
 3. Pick the **complete package**, or just the modules you want. Optional extras: **BAS Copilot** (Setup offers the model sizes this computer can run well) and **Npcap** (the packet-capture driver for Network+ live capture, its own signed installer, the one step that asks for administrator approval).
 4. Launch **BAS Hub** from the Start menu or your desktop. Your data lives in `%LOCALAPPDATA%\BAS Hub\data` and is never removed by updates or by uninstalling.
